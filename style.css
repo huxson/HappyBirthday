@@ -1,0 +1,44 @@
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:100px; top:0px;}
+    50%  {background-color:blue; left:100px; top:100px;}
+    75%  {background-color:green; left:0px; top:100px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes party {
+    0% {color: red}
+    25% {color: yellow}
+    50% {color: blue}
+    75% {color: green}
+    100% {color: red}
+}
+.big {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 90px;
+    font-family: cursive;
+}
+.party {
+    padding: 20px;
+    width: 200px;
+    height: 270px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.woo {
+    animation-name: party;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+body {
+    background-color: black;
+    background-image: url("birthday-celebration.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
